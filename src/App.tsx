@@ -1,15 +1,13 @@
-
-import toolbox from '/images/toolbox.png'
+import Header from './components/Header'
 import './App.css'
 
 function App() {
 
   return (
     <>
+      <Header />
       <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={toolbox} className="logo react" alt="React logo" />
-        </a>
+        <p>App</p>
       </div>
     </>
   )

@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("URWGeometric-thin-webfont.woff2") format('woff2');
+    font-style: "thin";
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-extralight-webfont.woff2") format('woff2');
+    font-style: "extralight";
+    font-weight: 200;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-light-webfont.woff2") format('woff2');
+    font-style: "light";
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-regular-webfont.woff2") format('woff2');
+    font-style: "regular";
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-medium-webfont.woff2") format('woff2');
+    font-style: "medium";
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-semibold-webfont.woff2") format('woff2');
+    font-style: "semibold";
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-bold-webfont.woff2") format('woff2');
+    font-style: "bold";
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-extrabold-webfont.woff2") format('woff2');
+    font-style: "extrabold";
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-heavy-webfont.woff2") format('woff2');
+    font-style: "heavy";
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: 'URWGeometric';
+    src: url("./URWGeometric-black-webfont.woff2") format('woff2');
+    font-style: "black";
+    font-weight: 950;
+}
