@@ -20,7 +20,7 @@ export default function Menu() {
           <div key={i}>
             {i > 0 && <span>{section.name}</span>}
             <ul>
-              {section.items.map((item, j) => {
+              {section.items.map((item) => {
                 return (
                   <li key={item.src}>
                     <Link to={item.src}>{item.name}</Link>
