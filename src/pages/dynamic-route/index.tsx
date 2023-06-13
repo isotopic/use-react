@@ -9,7 +9,7 @@ export default function DynamicRoute() {
             <div>
                 <div className="page-info">
                     <h2>
-                        DynamicRoute <p>dynamic-route/index.tsx</p>
+                        Dynamic route <p>dynamic-route/index.tsx</p>
                     </h2>
                     <p>useParams example.</p>
                     <code>

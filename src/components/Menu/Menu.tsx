@@ -1,5 +1,6 @@
 import styles from "./menu.module.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+// https://reactrouter.com/en/6.12.1/components/nav-link
 
 export default function Menu() {
 
@@ -24,7 +25,10 @@ export default function Menu() {
               {section.items.map((item) => {
                 return (
                   <li key={item.src}>
-                    <Link to={item.src}>{item.name}</Link>
+                    <NavLink to={item.src}
+                      className={({ isActive, isPending }) =>
+                        isPending ? styles.pending : isActive ? styles.active : ""
+                      }>{item.name}</NavLink>
                   </li>
                 );
               })}

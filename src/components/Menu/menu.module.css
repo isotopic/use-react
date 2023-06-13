@@ -6,23 +6,26 @@
   list-style: none;
 }
 
-.menu ul li {
-  background-color: rgba(0, 0, 0, 0);
-  border-radius: 8px;
-  padding: 6px 10px;
-  transition: background-color 0.3s;
-}
+.menu ul li {}
 
 .menu ul li a {
   display: block;
+  border-radius: 8px;
+  padding: 6px 10px;
+  transition: background-color 0.3s;
+  background-color: rgba(0, 0, 0, 0);
 }
 
-.menu ul li:hover {
+.menu ul li a:hover {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-.menu ul li.active {
+.menu ul li a.active {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu ul li a.pending {
+  background-color: rgba(0, 255, 0, 0.04);
 }
 
 .menu span {
