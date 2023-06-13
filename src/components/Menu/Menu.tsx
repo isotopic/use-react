@@ -8,7 +8,8 @@ export default function Menu() {
     {
       name: "Basics",
       items: [
-        { src: "/subpage", name: "Subpage" },
+        { src: "/query-params/?id=1", name: "Query params" },
+        { src: "/dynamic-route/1", name: "Dynamic Route" },
       ],
     },
   ];
