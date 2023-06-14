@@ -1,28 +1,10 @@
 import { useLoaderData } from "react-router-dom";
 import styles from "./page.module.css";
+import IUser from "../../types/User.ts";
 
 export default function Users() {
 
-    type User = {
-        id: number,
-        firstName: string,
-        lastName: string,
-        maidenName: string,
-        age: number,
-        gender: string,
-        email: string,
-        phone: string,
-        username: string,
-        password: string,
-        birthDate: string,
-        image: string,
-        bloodGroup: string,
-        height: number,
-        weight: number,
-        eyeColor: string,
-    }
-
-    const users = useLoaderData() as User[];
+    const users = useLoaderData() as IUser[];
 
     return (
         <div id="items">
