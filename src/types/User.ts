@@ -1,4 +1,4 @@
-export default interface IUser {
+interface IUser {
     id: number,
     firstName: string,
     lastName: string,
@@ -16,3 +16,5 @@ export default interface IUser {
     weight: number,
     eyeColor: string,
 }
+
+

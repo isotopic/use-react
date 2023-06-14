@@ -26,10 +26,11 @@ export default function Menu() {
               {section.items.map((item) => {
                 return (
                   <li key={item.src}>
-                    <NavLink to={item.src}
-                      className={({ isActive, isPending }) =>
-                        isPending ? styles.pending : isActive ? styles.active : ""
-                      }>{item.name}</NavLink>
+                    <NavLink
+                      to={item.src}
+                      className={({ isActive, isPending }) => isPending ? styles.pending : isActive ? styles.active : ""}>
+                      {item.name}
+                    </NavLink>
                   </li>
                 );
               })}
@@ -40,3 +41,5 @@ export default function Menu() {
     </div>
   );
 }
+
+
