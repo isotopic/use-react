@@ -3,11 +3,14 @@ import Error from './pages/error';
 import Index from './pages/index';
 import DynamicRoute from './pages/dynamic-route';
 import QueryParams from './pages/query-params';
-import Users from './pages/users';
+import Users from './pages/users/Users';
+import User from './pages/users/User';
+import UserEdit from './pages/users/UserEdit';
+import type { RouteObject } from 'react-router-dom';
 
-import { loader as usersLoader } from './data/users';
+import { getAllUsers, getSingleUser, editUser } from './requests/users';
 
-const routes = [
+const routes: RouteObject[] = [
     {
         path: "/",
         element: <Root />,
@@ -28,7 +31,18 @@ const routes = [
             {
                 path: "users",
                 element: <Users />,
-                loader: usersLoader,
+                loader: getAllUsers,
+            },
+            {
+                path: "users/:id",
+                element: <User />,
+                loader: getSingleUser,
+                action: editUser,
+            },
+            {
+                path: "users/:id/edit",
+                element: <UserEdit />,
+                loader: getSingleUser,
             },
         ],
     },

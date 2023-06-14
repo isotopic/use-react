@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import styles from "./page.module.css";
 
 export default function Users() {
@@ -11,7 +11,7 @@ export default function Users() {
                 <h2>
                     Users <p>users/index.tsx</p>
                 </h2>
-                <p>Example of data loading via routes and useLoaderData.</p>
+                <p>Example of data loading and http requests via routes and useLoaderData.</p>
             </div>
             <div className={styles.userlist}>
                 {users.map((item) => {
@@ -22,6 +22,7 @@ export default function Users() {
                             <p>{item.email}</p>
                             <p><b>username: </b> {item.username}</p>
                             <p><b>password: </b> {item.password}</p>
+                            <Link to={`${item.id}`}>Edit</Link>
                         </div>
                     )
                 })}
