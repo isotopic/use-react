@@ -11,6 +11,7 @@ export default function Menu() {
       items: [
         { src: "/query-params/?id=1", name: "Query params" },
         { src: "/dynamic-route/1", name: "Dynamic Route" },
+        { src: "/users", name: "Users" },
       ],
     },
   ];

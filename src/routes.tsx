@@ -3,6 +3,9 @@ import Error from './pages/error';
 import Index from './pages/index';
 import DynamicRoute from './pages/dynamic-route';
 import QueryParams from './pages/query-params';
+import Users from './pages/users';
+
+import { loader as usersLoader } from './data/users';
 
 const routes = [
     {
@@ -21,6 +24,11 @@ const routes = [
             {
                 path: "dynamic-route/:id?",
                 element: <DynamicRoute />,
+            },
+            {
+                path: "users",
+                element: <Users />,
+                loader: usersLoader,
             },
         ],
     },
