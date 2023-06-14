@@ -17,7 +17,7 @@ export default function User() {
             <div className={styles.form}>
                 <h3>Edit user</h3>
                 <img src={user.image || ''} />
-                <Form method="post" action="edit">
+                <Form method="post">
                     <label>
                         <span>Name</span>
                         <input

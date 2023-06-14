@@ -1,4 +1,4 @@
-import { Form, useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import styles from "./page.module.css";
 
 export default function User() {
@@ -9,7 +9,7 @@ export default function User() {
         <div>
             <div className="page-info">
                 <h2>
-                    User <p>users/User/index.tsx</p>
+                    User detail <p>users/User/index.tsx</p>
                 </h2>
                 <p>Example of data loading and http requests via routes and useLoaderData.</p>
             </div>
@@ -17,39 +17,11 @@ export default function User() {
             <div className={styles.form}>
                 <h3>Edit user</h3>
                 <img src={user.image || ''} />
-                <Form method="post" id="contact-form">
-                    <label>
-                        <span>Name</span>
-                        <input
-                            placeholder="First"
-                            aria-label="First name"
-                            type="firstName"
-                            name="first"
-                            defaultValue={user.firstName}
-                        />
-                        <input
-                            placeholder="Last"
-                            aria-label="Last name"
-                            type="text"
-                            name="lastName"
-                            defaultValue={user.lastName}
-                        />
-                    </label>
-                    <label>
-                        <span>Email</span>
-                        <input
-                            type="email"
-                            name="email"
-                            placeholder="email"
-                            defaultValue={user.email}
-                        />
-                    </label>
-                    <label>
-                        <span></span>
-                        <button type="button">Cancel</button>
-                        <button type="submit">Save</button>
-                    </label>
-                </Form>
+                <h4>{user.firstName} {user.lastName}</h4>
+                <p>{user.email}</p>
+                <p><b>username: </b> {user.username}</p>
+                <p><b>password: </b> {user.password}</p>
+                <Link to={`/users/${user.id}/edit`}>Edit</Link>
             </div>
         </div>
     );

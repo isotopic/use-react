@@ -37,12 +37,12 @@ const routes: RouteObject[] = [
                 path: "users/:id",
                 element: <User />,
                 loader: getSingleUser,
-                action: editUser,
             },
             {
                 path: "users/:id/edit",
                 element: <UserEdit />,
                 loader: getSingleUser,
+                action: editUser,
             },
         ],
     },
